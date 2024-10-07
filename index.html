@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactieve Kaart Amsterdam</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+        .popup-container {
+            width: 250px;
+            position: relative;
+        }
+        .popup-container h2 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .popup-container p {
+            margin: 5px 0 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        .audio-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .play-btn {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .slider {
+            width: 60%;
+            cursor: pointer;
+        }
+        /* .close-popup {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            color: #999;
+        }
+        .close-popup:hover {
+            color: #000;
+        } */
+    </style>
+    
+    
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script> <!-- Verbind met je JavaScript bestand -->
+</body>
+</html>
